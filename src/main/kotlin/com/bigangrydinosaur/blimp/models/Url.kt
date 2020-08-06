@@ -7,8 +7,7 @@ import javax.persistence.Id
 
 @Entity
 class Url(
-    @Id @GeneratedValue var id: Long? = null,
-    var code: String,
+    @Id var code: String,
     var url: String,
     var createdAt: LocalDateTime = LocalDateTime.now(),
     var expirationDate: LocalDateTime? = null
