@@ -36,6 +36,9 @@ dependencies {
 	testImplementation("com.ninja-squad:springmockk:1.1.3")
 	testImplementation("org.amshove.kluent:kluent:1.61")
 	testImplementation("org.springframework.boot:spring-boot-starter-webflux")
+
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 }
 
 tasks.withType<Test> {
