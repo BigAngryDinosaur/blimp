@@ -11,7 +11,10 @@ class SecurityConfig: WebSecurityConfigurerAdapter() {
 
     override fun configure(http: HttpSecurity?) {
         if (http == null) return
-        http.csrf().disable().authorizeRequests()
+        http.csrf().disable()
+                .httpBasic()
+                .and()
+                .authorizeRequests()
                 .anyRequest()
                 .permitAll()
     }
