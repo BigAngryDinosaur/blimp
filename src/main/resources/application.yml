@@ -6,3 +6,5 @@ app:
   node:
     id: 42
 
+security:
+  sessions: NEVER
